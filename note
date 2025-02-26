@@ -1,0 +1,17 @@
+vector:
+n push_back() -> n * O(1) = O(n)
+sort() -> O(nlogn)
+
+multiset:
+n insert() -> n * O(logn) = O(nlogn)
+
+same if every elements are only gonna be inserted once. (actually in this case, vector is slightly faster)
+
+but if more elements are gonna be inserted later, use multiset cuz its insert() is O(logn), while vector's insertion will be O(n) if you want the vector to maintain sorted.
+
+or if elements are gonna be erased, also use multiset cuz its erase(find()) is O(logn),
+while vector's erase() gonna take O(n) due to shifting.
+================================
+lower_bound(), upper_bound() are very useful.
+
+v.erase(unique(v.begin(), v.end()), v.end()); is useful.

@@ -7,7 +7,7 @@ int main(){
 	int n,m;
 	cin>>n>>m;
 	// vector<int> ticket_prices(n);
-	// we use multiset instead of vector so we can get rid of vector erase(), which is O(n)
+	// we use multiset instead of vector so we can get rid of vector erase(), which is O(n) because it involves shifting
 	// multiset erase() is O(logn)
 	multiset<int> ticket_prices;	
 	vector<int> customer_money(m);
